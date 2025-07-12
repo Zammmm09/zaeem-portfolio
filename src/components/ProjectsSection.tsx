@@ -2,6 +2,8 @@ import { ExternalLink, Github, Lock, Database, Brain, DollarSign } from "lucide-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { BarChart3 } from "lucide-react";
+
 
 const ProjectsSection = () => {
   const projects = [
@@ -32,7 +34,21 @@ const ProjectsSection = () => {
       ],
       github: "https://github.com/zaeem-ansari/face-recognition-attendance",
       status: "Completed"
-    }
+    },
+    {
+  title: "D.A.T.A – Digital Asset’s Technical Analyzer",
+  description: "An advanced tool for technical analysis of digital assets with chart indicators, real-time data, and crypto insights powered by TradingView API.",
+  icon: <BarChart3 className="h-8 w-8" />, // <- make sure to import BarChart3
+  tech: ["React", "Tailwind CSS", "Chart.js", "TradingView API"],
+  features: [
+    "Candlestick and volume charts",
+    "Real-time crypto market data",
+    "Technical indicators integration",
+    "Responsive dashboard UI"
+  ],
+  github: "https://github.com/Zammmm09/D.A.T.A-Digital-Asset-s-Technical-Analyzer",
+  status: "In Progress"
+  }
   ];
 
   return (
