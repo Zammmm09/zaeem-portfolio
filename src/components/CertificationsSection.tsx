@@ -13,7 +13,7 @@ const CertificationsSection = () => {
       description: "Comprehensive certification covering artificial intelligence and machine learning concepts using Java programming language.",
       skills: ["Java Programming", "AI Fundamentals", "Machine Learning", "Oracle Technologies"],
       credentialId: "ORA-AI-2024-001",
-      verifyUrl: "https://education.oracle.com/verify"
+      verifyUrl: "https://drive.google.com/file/d/1otTMzTLzgcH9pWLBoypVw5RgjmeS-igE/view?usp=drivesdk"
     },
     {
       title: "Power BI Workshop Certification",
@@ -23,17 +23,17 @@ const CertificationsSection = () => {
       description: "Professional certification in Microsoft Power BI for business intelligence, data visualization, and dashboard creation.",
       skills: ["Power BI", "Data Visualization", "Business Intelligence", "Dashboard Design"],
       credentialId: "PBI-2024-002",
-      verifyUrl: "https://officemaster.com/verify"
+      verifyUrl: "https://drive.google.com/file/d/1otbn1DmdfWSnq-iAMGHHMb1GS_ZMwY8J/view?usp=drivesdk"
     },
     {
       title: "Backend Development Certification",
-      issuer: "Tech Institute",
+      issuer: "Sheriyans Coding School",
       date: "2025",
-      status: "In Progress",
+      status: "Completed",
       description: "Advanced backend development certification focusing on Node.js, Express.js, and modern server-side technologies.",
       skills: ["Node.js", "Express.js", "API Development", "Database Management"],
-      credentialId: "TBD",
-      verifyUrl: "#"
+      credentialId: "9483ac6b",
+      verifyUrl: "https://drive.google.com/file/d/1a1M3OuC3IUVxTBKtAz5XhgQlEXpnx0qC/view?usp=drivesdk"
     }
   ];
 
@@ -130,33 +130,7 @@ const CertificationsSection = () => {
             ))}
           </div>
 
-          {/* Future Learning Goals */}
-          <div className="mt-16">
-            <Card className="card-hover bg-gradient-to-r from-card/50 to-card/30 border-accent/20 backdrop-blur-sm">
-              <CardContent className="p-8 text-center">
-                <h3 className="text-2xl font-bold mb-4 text-accent">Upcoming Certifications</h3>
-                <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                  I'm committed to continuous learning and professional development. Here are the certifications I'm planning to pursue.
-                </p>
-                <div className="flex flex-wrap justify-center gap-3">
-                  {[
-                    "AWS Cloud Practitioner",
-                    "MongoDB Developer",
-                    "Docker Fundamentals",
-                    "Kubernetes Basics",
-                    "GraphQL Certification"
-                  ].map((cert) => (
-                    <Badge 
-                      key={cert} 
-                      className="bg-accent/20 text-accent border-accent/30 hover:bg-accent/30 transition-colors px-3 py-1"
-                    >
-                      {cert}
-                    </Badge>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          </div>
+          
         </div>
       </div>
     </section>

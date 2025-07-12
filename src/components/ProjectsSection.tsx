@@ -1,7 +1,7 @@
 import { ExternalLink, Github, Lock, Database, Brain, DollarSign } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 
 const ProjectsSection = () => {
   const projects = [
@@ -28,148 +28,54 @@ const ProjectsSection = () => {
       features: [
         "Real-time facial detection and recognition",
         "Sleep mode detection for accuracy",
-        "Secure admin login system",
-        "Automated attendance logging"
+        "User role differentiation for Admin and Students"
       ],
-      github: "https://github.com/zaeem-ansari/face-attendance",
-      demo: null,
+      github: "https://github.com/zaeem-ansari/face-recognition-attendance",
       status: "Completed"
-    },
-    {
-      title: "JPMC Core Task (Virtual Internship)",
-      description: "Industry-level API integration project implementing secure logic validation and best practices as part of JPMorgan Chase virtual internship program.",
-      icon: <Database className="h-8 w-8" />,
-      tech: ["JavaScript", "REST APIs", "JSON", "Git", "Industry Practices"],
-      features: [
-        "Secure API logic validation",
-        "Industry-standard code practices",
-        "Data processing and manipulation",
-        "Version control with Git"
-      ],
-      github: "https://github.com/zaeem-ansari/jpmc-task",
-      demo: null,
-      status: "Certified"
     }
   ];
 
-  const getStatusColor = (status: string) => {
-    switch (status) {
-      case "Completed": return "bg-primary/20 text-primary border-primary/30";
-      case "Certified": return "bg-accent/20 text-accent border-accent/30";
-      default: return "bg-muted/20 text-muted-foreground border-muted/30";
-    }
-  };
-
   return (
-    <section id="projects" className="py-20 bg-muted/20">
-      <div className="container mx-auto px-6">
-        <div className="max-w-7xl mx-auto">
-          {/* Section Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Featured <span className="text-primary">Projects</span>
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              A showcase of my backend development skills and practical problem-solving approach
-            </p>
-            <div className="w-24 h-1 bg-gradient-accent mx-auto rounded-full mt-6" />
-          </div>
-
-          {/* Projects Grid */}
-          <div className="grid lg:grid-cols-1 gap-8">
-            {projects.map((project, index) => (
-              <Card key={index} className="card-hover bg-card/80 border-primary/20 backdrop-blur-sm overflow-hidden">
-                <CardHeader className="pb-4">
-                  <div className="flex items-start justify-between">
-                    <div className="flex items-center gap-4">
-                      <div className="p-3 rounded-lg bg-primary/10 text-primary">
-                        {project.icon}
-                      </div>
-                      <div>
-                        <CardTitle className="text-2xl mb-2">{project.title}</CardTitle>
-                        <Badge className={getStatusColor(project.status)}>
-                          {project.status}
-                        </Badge>
-                      </div>
-                    </div>
+    <section id="projects" className="py-20">
+      <div className="container">
+        <h2 className="text-3xl font-bold mb-10 text-center">Projects</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {projects.map((project, index) => (
+            <Card key={index} className="hover:shadow-xl transition-shadow duration-300">
+              <CardHeader>
+                <div className="flex items-center gap-4">
+                  <div className="bg-gray-100 p-2 rounded-full">
+                    {project.icon}
                   </div>
-                </CardHeader>
-
-                <CardContent className="space-y-6">
-                  <p className="text-muted-foreground leading-relaxed">
-                    {project.description}
-                  </p>
-
-                  {/* Features */}
                   <div>
-                    <h4 className="font-semibold mb-3 text-primary">Key Features:</h4>
-                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                      {project.features.map((feature, featureIndex) => (
-                        <li key={featureIndex} className="flex items-center gap-2 text-sm text-muted-foreground">
-                          <div className="w-1.5 h-1.5 bg-primary rounded-full" />
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
+                    <CardTitle>{project.title}</CardTitle>
+                    <p className="text-sm text-gray-500">{project.status}</p>
                   </div>
-
-                  {/* Tech Stack */}
-                  <div>
-                    <h4 className="font-semibold mb-3 text-primary">Technologies:</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {project.tech.map((tech, techIndex) => (
-                        <Badge key={techIndex} variant="outline" className="border-primary/30 text-xs">
-                          {tech}
-                        </Badge>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Action Buttons */}
-                  <div className="flex gap-3 pt-4">
-                    <Button
-                      variant="outline"
-                      onClick={() => window.open(project.github, '_blank')}
-                      className="flex-1 border-primary/30 hover:border-primary/60 hover:bg-primary/10"
-                    >
-                      <Github className="mr-2 h-4 w-4" />
-                      View Code
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="mb-2 text-sm">{project.description}</p>
+                <div className="flex flex-wrap gap-2 my-2">
+                  {project.tech.map((tech, i) => (
+                    <Badge key={i} variant="secondary">{tech}</Badge>
+                  ))}
+                </div>
+                <ul className="list-disc list-inside text-sm text-gray-700 mb-4">
+                  {project.features.map((feature, i) => (
+                    <li key={i}>{feature}</li>
+                  ))}
+                </ul>
+                <div className="flex gap-2">
+                  <a href={project.github} target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" size="sm">
+                      <Github className="h-4 w-4 mr-1" />
+                      GitHub
                     </Button>
-                    
-                    {project.demo ? (
-                      <Button
-                        onClick={() => window.open(project.demo, '_blank')}
-                        className="flex-1"
-                      >
-                        <ExternalLink className="mr-2 h-4 w-4" />
-                        Live Demo
-                      </Button>
-                    ) : (
-                      <Button variant="outline" disabled className="flex-1">
-                        <Lock className="mr-2 h-4 w-4" />
-                        Private Demo
-                      </Button>
-                    )}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          {/* CTA */}
-          <div className="text-center mt-12">
-            <p className="text-muted-foreground mb-6">
-              Want to see more of my work or discuss a project?
-            </p>
-            <Button 
-              size="lg"
-              onClick={() => window.open('https://github.com/zaeem-ansari', '_blank')}
-              className="px-8"
-            >
-              View All Projects on GitHub
-              <ExternalLink className="ml-2 h-5 w-5" />
-            </Button>
-          </div>
+                  </a>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
     </section>

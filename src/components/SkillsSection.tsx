@@ -28,16 +28,11 @@ const SkillsSection = () => {
       skills: ["Git & GitHub", "VS Code", "Postman", "npm/yarn"],
       color: "neon-purple"
     },
-    {
-      title: "Specialized Skills",
-      icon: <Brain className="h-6 w-6" />,
-      skills: ["AI/ML Integration", "Face Recognition", "Session Management", "Security Practices"],
-      color: "primary"
-    },
+    
     {
       title: "Analytics & Visualization",
       icon: <BarChart className="h-6 w-6" />,
-      skills: ["Power BI", "Data Visualization", "Dashboard Creation", "Business Intelligence"],
+      skills: ["Power BI", "Dashboard Creation", "Business Intelligence"],
       color: "accent"
     }
   ];
@@ -110,27 +105,7 @@ const SkillsSection = () => {
             ))}
           </div>
 
-          {/* Learning Path */}
-          <div className="mt-16 text-center">
-            <Card className="card-hover bg-gradient-to-r from-card/50 to-card/30 border-primary/20 backdrop-blur-sm">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-4 text-primary">Currently Learning</h3>
-                <p className="text-muted-foreground mb-6">
-                  Always expanding my skillset to stay current with industry trends
-                </p>
-                <div className="flex flex-wrap justify-center gap-3">
-                  {["TypeScript", "Docker", "AWS", "GraphQL", "Redis", "Microservices"].map((skill) => (
-                    <Badge 
-                      key={skill} 
-                      className="bg-accent/20 text-accent border-accent/30 hover:bg-accent/30 transition-colors"
-                    >
-                      {skill}
-                    </Badge>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          </div>
+          
         </div>
       </div>
     </section>

@@ -69,20 +69,24 @@ const HeroSection = () => {
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             
-            <Button
-              variant="outline"
-              size="lg"
-              onClick={() => scrollToSection('contact')}
-              className="px-8 py-6 text-lg font-semibold border-primary/30 hover:border-primary/60 hover:bg-primary/10"
-            >
-              Get in Touch
-            </Button>
+            <a
+  href="mailto:zaeemansari6666@gmail.com"
+  className="inline-block"
+>
+  <Button
+    variant="outline"
+    size="lg"
+    className="px-8 py-6 text-lg font-semibold border-primary/30 hover:border-primary/60 hover:bg-primary/10"
+  >
+    Get in Touch
+  </Button>
+</a>
           </div>
 
           {/* Social Links */}
           <div className="flex justify-center gap-6">
             <a 
-              href="https://github.com/zaeem-ansari" 
+              href="https://github.com/Zammmm09" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-card/80 border border-primary/20 hover:border-primary/40 hover:bg-card-hover transition-all duration-300 group"
@@ -90,7 +94,7 @@ const HeroSection = () => {
               <Github className="h-6 w-6 group-hover:text-primary transition-colors" />
             </a>
             <a 
-              href="https://linkedin.com/in/zaeem-ansari" 
+              href="https://www.linkedin.com/in/zaeem-ansari-655a1b28b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-card/80 border border-primary/20 hover:border-primary/40 hover:bg-card-hover transition-all duration-300 group"
@@ -98,12 +102,13 @@ const HeroSection = () => {
               <Linkedin className="h-6 w-6 group-hover:text-primary transition-colors" />
             </a>
             <a 
-              href="/resume.pdf" 
-              download
-              className="p-3 rounded-full bg-card/80 border border-primary/20 hover:border-primary/40 hover:bg-card-hover transition-all duration-300 group"
-            >
-              <Download className="h-6 w-6 group-hover:text-primary transition-colors" />
-            </a>
+  href="https://drive.google.com/file/d/1ovL_EfWYv_JkjqsS31M8sNpKITBUHB1Y/view?usp=drivesdk" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="p-3 rounded-full bg-card/80 border border-primary/20 hover:border-primary/40 hover:bg-card-hover transition-all duration-300 group"
+>
+  <Download className="h-6 w-6 group-hover:text-primary transition-colors" />
+</a>
           </div>
         </div>
       </div>

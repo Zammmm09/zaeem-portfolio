@@ -44,37 +44,39 @@ const AboutSection = () => {
               </div>
 
               {/* Action Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Button 
-                  size="lg" 
-                  className="group"
-                  onClick={() => window.open('/resume.pdf', '_blank')}
-                >
-                  <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
-                  Download Resume
-                </Button>
-                
-                <div className="flex gap-3">
-                  <Button
-                    variant="outline"
-                    size="lg"
-                    onClick={() => window.open('https://github.com/zaeem-ansari', '_blank')}
-                    className="flex-1"
-                  >
-                    <Github className="mr-2 h-5 w-5" />
-                    GitHub
-                  </Button>
-                  <Button
-                    variant="outline"
-                    size="lg"
-                    onClick={() => window.open('https://linkedin.com/in/zaeem-ansari', '_blank')}
-                    className="flex-1"
-                  >
-                    <Linkedin className="mr-2 h-5 w-5" />
-                    LinkedIn
-                  </Button>
-                </div>
-              </div>
+              {/* Action Buttons */}
+<div className="flex flex-col sm:flex-row gap-4 pt-4">
+  <Button 
+    size="lg" 
+    className="group"
+    onClick={() => window.open('https://drive.google.com/file/d/1ovL_EfWYv_JkjqsS31M8sNpKITBUHB1Y/view?usp=drivesdk', '_blank')}
+  >
+    <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
+    Download Resume
+  </Button>
+
+  <div className="flex gap-3">
+    <Button
+      variant="outline"
+      size="lg"
+      onClick={() => window.open('https://github.com/Zammmm09', '_blank')}
+      className="flex-1"
+    >
+      <Github className="mr-2 h-5 w-5" />
+      GitHub
+    </Button>
+    <Button
+      variant="outline"
+      size="lg"
+      onClick={() => window.open('https://www.linkedin.com/in/zaeem-ansari-655a1b28b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', '_blank')}
+      className="flex-1"
+    >
+      <Linkedin className="mr-2 h-5 w-5" />
+      LinkedIn
+    </Button>
+  </div>
+</div>
+
             </div>
 
             {/* Stats Cards */}
@@ -93,12 +95,7 @@ const AboutSection = () => {
                 </CardContent>
               </Card>
               
-              <Card className="card-hover bg-card/50 border-primary/20">
-                <CardContent className="p-6 text-center">
-                  <div className="text-3xl font-bold text-neon-cyan mb-2">1</div>
-                  <div className="text-sm text-muted-foreground">Internship</div>
-                </CardContent>
-              </Card>
+              
               
               <Card className="card-hover bg-card/50 border-primary/20">
                 <CardContent className="p-6 text-center">
