@@ -24,7 +24,7 @@ const ProjectsSection = () => {
     },
     {
       title: "Face Recognition Attendance System",
-      description: "AI-powered attendance management system featuring facial detection, sleep mode monitoring, and secure administrative controls for educational institutions.",
+      description: "Attendance management system featuring facial detection, and secure administrative controls for educational institutions.",
       icon: <Brain className="h-8 w-8" />,
       tech: ["Python", "OpenCV", "Face Recognition", "Tkinter", "SQLite"],
       features: [
@@ -47,7 +47,7 @@ const ProjectsSection = () => {
     "Responsive dashboard UI"
   ],
   github: "https://github.com/Zammmm09/D.A.T.A-Digital-Asset-s-Technical-Analyzer",
-  status: "In Progress"
+  status: "Completed"
   }
   ];
 
