@@ -16,8 +16,8 @@ const ProjectsSection = () => {
         "Password-protected sharing system",
         "Responsive design with Tailwind CSS"
       ],
-      github: "https://github.com/zaeem-ansari/khatabook",
-      demo: "https://khatabook-demo.vercel.app",
+      github: "https://github.com/Zammmm09/khatabook",
+      
       status: "Completed"
     },
     {
