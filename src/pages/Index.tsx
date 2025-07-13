@@ -6,6 +6,7 @@ import SkillsSection from "@/components/SkillsSection";
 import CertificationsSection from "@/components/CertificationsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import EducationSection from "@/components/EducationSection"; // Add this line
 
 const Index = () => {
   useEffect(() => {
@@ -18,6 +19,7 @@ const Index = () => {
       <AboutSection />
       <ProjectsSection />
       <SkillsSection />
+      <EducationSection />
       <CertificationsSection />
       <ContactSection />
       <Footer />
