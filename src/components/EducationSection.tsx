@@ -7,9 +7,9 @@ const EducationSection = () => {
         <h2 className="text-4xl font-bold text-center mb-10 text-primary">Education</h2>
         <div className="rounded-xl border border-border bg-card/90 shadow-lg p-6 md:p-8 transition-all duration-300 hover:shadow-xl">
           <div className="space-y-2">
-            <h3 className="text-2xl font-semibold text-foreground">MET Bhujbal Knowledge City</h3>
+            <h3 className="text-2xl font-semibold text-foreground">Bachelor of Technology in Computer Science & Design</h3>
             <p className="text-sm text-muted-foreground">
-              Bachelor of Technology in Computer Science & Design
+              MET Bhujbal Knowledge City, Nashik
             </p>
             <p className="text-sm text-gray-500">2022 – 2026 (Expected)</p>
           </div>
