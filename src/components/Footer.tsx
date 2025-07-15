@@ -100,7 +100,7 @@ const Footer = () => {
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <div className="flex items-center gap-2 text-muted-foreground">
                 <span>© {currentYear} Zaeem Ansari. Made with</span>
-                <Heart className="h-4 w-4 text-red-500 animate-pulse" />
+            
                 <span>using React & Tailwind CSS</span>
               </div>
               
