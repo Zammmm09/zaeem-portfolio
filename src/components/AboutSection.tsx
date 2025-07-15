@@ -35,7 +35,7 @@ const AboutSection = () => {
               <div className="space-y-3">
                 <div className="flex items-center gap-3 text-muted-foreground">
                   <MapPin className="h-5 w-5 text-primary" />
-                  <span>Based in India</span>
+                  <span>Nashik, Maharashtra</span>
                 </div>
                 <div className="flex items-center gap-3 text-muted-foreground">
                   <Calendar className="h-5 w-5 text-primary" />
