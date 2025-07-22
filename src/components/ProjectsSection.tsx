@@ -1,8 +1,9 @@
-import { ExternalLink, Github, Lock, Database, Brain, DollarSign } from "lucide-react";
+import { ExternalLink, Github, Lock, Database, Brain, DollarSign, ShieldCheck } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { BarChart3 } from "lucide-react";
+
 
 
 const ProjectsSection = () => {
@@ -48,7 +49,22 @@ const ProjectsSection = () => {
   ],
   github: "https://github.com/Zammmm09/D.A.T.A-Digital-Asset-s-Technical-Analyzer",
   status: "Completed"
-  }
+  },
+  {
+  title: "SECUREAPI – Authentication with JWT",
+  description: "A secure RESTful API developed with Node.js and Express.js implementing robust user authentication and authorization using JSON Web Tokens (JWT).",
+  icon: <ShieldCheck className="h-8 w-8" />, // <- make sure to import ShieldCheck from lucide-react
+  tech: ["Node.js", "Express.js", "MongoDB", "JWT", "REST API"],
+  features: [
+    "JWT-based user authentication",
+    "Protected API routes",
+    "MongoDB for user data persistence",
+    "Postman-tested endpoints for login, registration, and profile access"
+  ],
+  github: "https://github.com/Zammmm09/SECUREAPI-WITH-JWT",
+  status: "Completed"
+}
+
   ];
 
   return (
